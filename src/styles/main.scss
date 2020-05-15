@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Roboto-Medium';
+    font-style: normal;
+    src: url('../asstets/fonts/Roboto-Medium.ttf');
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto-Medium';
+}
+  
+@import 'heroPage.module';
+@import 'orderForm.module';
+@import 'productDesc.module';
+@import 'contact.module';
+@import 'footer.module';
+@import 'brake.module';

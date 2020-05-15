@@ -1,0 +1,135 @@
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(+100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.order-form_container {
+    position: relative;
+    animation: 1s ease-out 0s 1 slideInFromRight;
+    @media only screen and (max-width: 900px) {
+        animation: none;
+    }
+}
+  
+.order-form_object {
+    width: 15em;
+    height: 20em;
+    background: rgba(211, 208, 208, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    border-radius: 20px;
+    bottom: 2em;
+    right: 2em;
+    box-shadow: 6px 6px 5px grey;
+    > form {
+        height: 18em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1em;
+        > input {
+            font-size: 1em;
+            padding: 0.3em;
+            padding-left: 1em;
+            border: none;
+            border-radius: 5px;
+        }
+        > input:focus {
+            outline: none;
+        }
+
+        > p {
+            font-size: 0.7em;
+            margin: 1.2em;
+        } 
+
+        > button {
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            border: none;
+            border-radius: 15px;
+            height: 3em;
+            width: 7em;
+            color: rgb(129, 116, 116);
+            background: rgba(255, 255, 255, 1.0);
+            background: -webkit-radial-gradient(top right, rgba(255, 255, 255, 1.0), rgba(139, 196, 226, 1.0));
+            background: -moz-radial-gradient(top right, rgba(255, 255, 255, 1.0), rgba(139, 196, 226, 1.0));
+            background: radial-gradient(to bottom left, rgba(255, 255, 255, 1.0), rgba(139, 196, 226, 1.0));
+        }
+
+        > button:hover {
+            cursor: pointer;
+            background-color: rgb(212, 245, 255);
+        }
+
+        > button:focus {
+            outline: none;
+        }
+    }
+    @media only screen and (max-width: 1300px) {
+        width: 25em;
+        height: 15em;
+        > form {
+            height: 12em;
+            > input {
+                font-size: 0.8em;
+                padding: 0.3em;
+                padding-left: 1em;
+                border: none;
+                border-radius: 5px;
+                width: 80%;
+            }
+            > p {
+                font-size: 0.7em;
+                margin: 0.5em 2em 0.5em 2em;
+            } 
+        }
+    }
+    @media only screen and (max-width: 900px) {
+        position: relative;
+        box-shadow: none;
+        bottom: unset;
+        right: unset;
+        > form {
+            height: 12em;
+            > input {
+                font-size: 1em;
+                padding: 0.3em;
+                padding-left: 1em;
+                border: none;
+                border-radius: 5px;
+                width: 80%;
+            }
+        }
+    }
+    @media only screen and (max-width: 510px) {
+        width: 20em;
+        height: 15em;
+    }
+    @media only screen and (max-width: 440px) {
+        width: 18em;
+        height: 13em;
+        > form {
+            height: 12em;
+            > input {
+                font-size: 0.8em;
+                padding: 0.3em;
+                padding-left: 1em;
+                border: none;
+                border-radius: 5px;
+                width: 80%;
+            }
+            > p {
+                font-size: 0.5em;
+                margin: 0.5em 1em 0.5em 1em;
+            } 
+        }
+    }
+}

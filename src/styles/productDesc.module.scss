@@ -1,0 +1,71 @@
+
+.product-desc_content {
+    background-image: url("../asstets/images/background-fruit.jpg");
+    background-size: cover;
+
+}
+.product-desc_container {
+    background-color: rgba(187, 174, 174, 0.7);
+}
+
+.product-desc_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    @media only screen and (max-width: 900px) {
+        flex-direction: column;
+    }
+    
+}
+
+.product-desc_info {
+    background-color: rgba(245, 245, 245, 0.7);
+    width: 40em;
+    padding: 2em;
+    margin: 4em;
+    border-radius: 20px;
+    > h2 {
+        letter-spacing: 0.2em;
+        margin: 0em;
+    }
+    @media only screen and (max-width: 750px) {
+        width: 35em;
+    }
+    @media only screen and (max-width: 650px) {
+        width: 30em;
+    }
+    @media only screen and (max-width: 560px) {
+        > h2 {
+            font-size: 1.2em;
+        }
+        width: 25em;
+    }
+    @media only screen and (max-width: 560px) {
+        > h2 {
+            font-size: 1em;
+        }
+        > p {
+            font-size: 0.8em;
+        }
+        width: 20em;
+    }
+    @media only screen and (max-width: 560px) {
+        > h2 {
+            font-size: 1em;
+        }
+        > p {
+            font-size: 0.7em;
+        }
+        width: 16em;
+    }
+    @media only screen and (max-width: 400px) {
+        margin: 1em;
+    }
+}
+
+.product-desc_slim-image {
+    @media only screen and (max-width: 900px) {
+        margin-bottom: 4em;
+    }
+}
